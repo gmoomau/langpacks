@@ -12,7 +12,7 @@ apt-get install -y python-pip
 pip install --upgrade pip
 
 # Same thing but now for python 3.4
-apt-get install -y python3.4 python3.4-dev
+apt-get install -y python3.4
 apt-get install -y python3-pip
 pip3 install --upgrade pip
 
