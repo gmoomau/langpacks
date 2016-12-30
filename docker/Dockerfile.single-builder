@@ -25,11 +25,6 @@ RUN curl -LO https://s3.amazonaws.com/algorithmia-docker/docker-deps/cudnn-7.5-l
     mv cuda/include/* /usr/local/cuda/include && \
     mv cuda/lib64/* /usr/local/cuda/lib64
 
-RUN update-alternatives --install /usr/bin/cc cc /usr/bin/gcc-4.6 30 && \
-    update-alternatives --install /usr/bin/c++ c++ /usr/bin/g++-4.6 30 && \
-    update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.6 30 && \
-    update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.6 30
-
 WORKDIR /tmp/build
 CMD ["bin/build"]
 
